@@ -1,4 +1,4 @@
-# Do-it-Right-EF_ConcurrencyHandling
+# Do-it-Right / Entity Framework Concurrency Handling
 
 ## Scenario
 
