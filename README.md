@@ -10,4 +10,4 @@ In this context, it is to mention that such a conflict can exclusively happen wh
 * **Delete conflict:** One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
 It stands to reason, that concurrency conflicts cannot occur when executing an Insert Command or when querying the data.
-When inserting a new dataset, there cannot arise concurrency conflicts because it is not possible for other users to access the respective dataset until it is committed to the database. On the other hand, querying on the data cannot lead to concurrency conflicts by the fact that querying operations are read-only.
+When inserting a new dataset, there cannot arise concurrency conflicts because it is not possible for other users to access the respective dataset until it is committed to the database. On the other hand, querying on the data cannot lead to concurrency conflicts by the fact that query operations are read-only.
