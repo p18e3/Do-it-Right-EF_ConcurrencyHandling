@@ -2,4 +2,4 @@
 
 ## Scenario
 
-Once an application allows multiple users to work on the same amount of data, it can happen ...
+Once an application allows multiple users to work on one dataset at the same time, concurrency conflicts may come to pass.
