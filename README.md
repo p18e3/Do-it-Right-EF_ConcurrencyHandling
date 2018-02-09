@@ -21,3 +21,5 @@ For this reason, we need a mechanism which enables us to perform the following s
 1. Detect concurrency conflicts and inform the application / user about it
 2. Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
 3. Realize strategies to write the data back in a synchronized state
+
+In order to implementing a such mechanism, Entity Framework helps us to achieve the expected behavior and prevents us from unsynchronized operations on data. Therefore, it defines 
