@@ -18,6 +18,6 @@ In general, when an Update or Delete conflict occurs, this is not noticed by the
 
 For this reason, we need a mechanism which enables us to perform the following steps:
 
-1. Detect concurrency conflicts and inform the application about it
-2. Provide the last consistent dataset and the dirty dataset(s) in order to merge / synchronize them
+1. Detect concurrency conflicts and inform the application / user about it
+2. Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
 3. Realize strategies to write the data back in a synchronized state
