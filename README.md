@@ -15,3 +15,9 @@ When inserting a new dataset, there cannot arise concurrency conflicts because i
 In general, when an Update or Delete conflict occurs, this is not noticed by the surrounding application and leads unnoticed by the user to data loss or corrupt data. Under this circumstance, it is important to provide and implement mechanisms that prevent the users from data loss or corruption.
 
 ## Approach
+
+For this reason, we need a mechanism which enables us to perform the following steps:
+
+1. Detect concurrency conflicts and inform the application about it
+2. Provide the last consistent dataset and the dirty dataset(s) in order to merge / synchronize them
+3. Realize strategies to write the data back in a synchronized state
