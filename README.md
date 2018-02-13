@@ -5,13 +5,15 @@
 Once an application allows multiple users to work on one dataset at the same time, concurrency conflicts may come to pass.
 In this context, it is to mention that such a conflict can exclusively happen when executing an Update or Delete command on the dataset:
 
-* **Update conflict:** Two or more users are about to perform changes on the same dataset, which can lead to that the changes in the first update will be lost.
+### Update conflict
+Two or more users are about to perform changes on the same dataset, which can lead to that the changes in the first update will be lost.
 
 <p align="center">
   <img src="https://github.com/p18e3/Do-it-Right-EF_ConcurrencyHandling/blob/master/UpdateConflict.png" />
 </p>
 
-* **Delete conflict:** One or more users try to update a dataset, which meanwhile has been deleted by another user.
+### Delete conflict
+One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
 It stands to reason, that concurrency conflicts cannot occur when executing an Insert Command or when querying the data.
 When inserting a new dataset, there cannot arise concurrency conflicts because it is not possible for other users to access the respective dataset until it is committed to the database. On the other hand, querying on the data cannot lead to concurrency conflicts by the fact that query operations are read-only.
