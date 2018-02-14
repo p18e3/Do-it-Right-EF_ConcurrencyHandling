@@ -5,7 +5,7 @@
 Once an application allows multiple users to work on one dataset at the same time, concurrency conflicts may come to pass.
 In this context, it is to mention that such a conflict can exclusively happen when executing an Update or Delete command on the dataset, which will be explained in the following.
 
-### Update conflict
+### (1) Update conflict
 > Two or more users are about to perform changes on the same dataset, which can lead to that the changes in the first update will be lost.
 > In Database Terminology, this is called Lost Update.
 
@@ -16,7 +16,7 @@ On the x-axis, the Time dimension is represented, which shows the time course of
   <img src="https://github.com/p18e3/Do-it-Right-EF_ConcurrencyHandling/blob/master/UpdateConflict.png" />
 </p>
 
-### Delete conflict
+### (2) Delete conflict
 > One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
 <p align="center">
