@@ -16,6 +16,8 @@ On the x-axis, the Time dimension is represented, which shows the time course of
   <img src="https://github.com/p18e3/Do-it-Right-EF_ConcurrencyHandling/blob/master/UpdateConflict.png" />
 </p>
 
+Beginning on the lower left-hand side, we can see that there's an User Entity persisted in the database, which is then being loaded by one user, and shortly thereafter by another user.
+
 ### (2) Delete conflict
 > One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
