@@ -17,7 +17,7 @@ On the x-axis, the Time dimension is represented, which shows the time course of
 </p>
 
 ### Delete conflict
-One or more users try to update a dataset, which meanwhile has been deleted by another user.
+> One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
 <p align="center">
   <img src="https://github.com/p18e3/Do-it-Right-EF_ConcurrencyHandling/blob/master/DeleteConflict.png" />
