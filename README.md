@@ -8,7 +8,7 @@ In this context, it is to mention that such a conflict can exclusively happen wh
 ### Update conflict
 _Two or more users are about to perform changes on the same dataset, which can lead to that the changes in the first update will be lost. In Database Terminology, this is called_ `Lost Update`.
 
-This is illustrated in the graphic below, where we can se the memory-dimension on the y-axis, which is divided into the Database dimension and the In-Memory representation, which is titled RAM. The database entities, which are loaded in the application are thereby represented in the RAM, whereas all the committed data are represented in the database.
+The phenomenon is illustrated in the graphic below, where we can se the memory-dimension on the y-axis, which is divided into the Database dimension and the In-Memory representation, which is titled RAM. The database entities, which are loaded in the application are thereby represented in the RAM, whereas all the committed data are represented in the database.
 On the x-axis, the Time dimension is represented, which shows the time course of the concurrent transactions.
 
 <p align="center">
