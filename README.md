@@ -32,7 +32,7 @@ Both of the presented conflicts have in common, that the Database Management Sys
 
 In general, when an Update or Delete conflict occurs, this is not noticed by the surrounding application and leads unnoticed by the user to data loss or corrupt data. Under this circumstance, it is important to provide and implement mechanisms that prevent the users from data loss or corruption. The Entity Framework O/R Mapper delivers us an easy-to-use and powerful mechanism to identify such conflicts.
 
-For the sake of completeness, it should be explained why concurrency conflicts cannot happen during the execution of an Insertion or Read operation on the database.
+For the sake of completeness, it should be explained why concurrency conflicts cannot happen during the execution of an insertion or read operation against the database.
 When inserting a new dataset, there cannot arise concurrency conflicts because it is not possible for other users to access the respective dataset until it is committed to the database. On the other hand, querying on the data cannot lead to concurrency conflicts by the fact that query operations are read-only.
 
 ## Approach
