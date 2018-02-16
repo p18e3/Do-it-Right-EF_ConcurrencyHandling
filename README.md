@@ -22,6 +22,8 @@ In the next step, the user which has first loaded the entity out of the database
 ### (2) Delete conflict
 > One or more users try to update a dataset, which meanwhile has been deleted by another user.
 
+A delete conflict happens by the same constellation as seen in the Update Conflict above. The difference is that a Delete Conflict happens by the fact that the changes on the loaded entity should be committed back to the database, where the entity does not exist anymore.
+
 <p align="center">
   <img src="https://github.com/p18e3/Do-it-Right-EF_ConcurrencyHandling/blob/master/DeleteConflict.png" />
 </p>
