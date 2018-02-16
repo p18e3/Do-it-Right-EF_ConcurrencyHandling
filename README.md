@@ -30,7 +30,7 @@ A delete conflict happens by the same constellation as seen in the Update Confli
 
 Both of the presented conflicts have in common, that the Database Management System does not know about the conflict that happened during the execution of the conflicting Update or Delete statement. In this context, it is the task of the application or the user to decide whether a conflict happened or not. This can be done by using a `RowVersion` for the datasets and evaluating the `Affected Rows` property after the execution of a SQL statement.
 
-
+For the sake of completeness, it should be explained why concurrency conflicts cannot happen during execution of an Insertion or Read operation on the database.
 It stands to reason, that concurrency conflicts cannot occur when executing an Insert Command or when querying the data.
 When inserting a new dataset, there cannot arise concurrency conflicts because it is not possible for other users to access the respective dataset until it is committed to the database. On the other hand, querying on the data cannot lead to concurrency conflicts by the fact that query operations are read-only.
 
