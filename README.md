@@ -37,7 +37,7 @@ When inserting a new dataset, there cannot arise concurrency conflicts because i
 
 ## Approach
 
-For this reason, we need a mechanism which enables us to perform the following steps:
+In the previous section we determined, that we need a mechanism which enables us to perform the following steps:
 
 1. Detect concurrency conflicts and inform the application / user about it
 2. Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
