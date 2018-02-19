@@ -45,4 +45,4 @@ Referring to the given scenario described in the previous section, we need a mec
 
 The first, and most important step can be realized using a so-called `RowVersion` in the database-tables. Thus, a conflict-compromised table is provided with an extra column, which stores the RowVersion value of the dataset. When running an Update operation on the dataset, the `RowVersion` of the respecting dataset gets automatically updated by the Database Management System.
 
-> SQL Server provides us a `RowVersion` mechanism with the `rowversion` datatype [see here](https://msdn.microsoft.com/de-de/library/ms182776(v=sql.120).aspx)
+> SQL Server provides us a `RowVersion` mechanism with the [rowversion datatype](https://msdn.microsoft.com/de-de/library/ms182776(v=sql.120).aspx).
