@@ -43,4 +43,4 @@ Referring to the given scenario described in the previous section, we need a mec
   2. Fetching last consistent state: Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
   3. Conflict resolution: Realize strategies to write the data back in a synchronized state
 
-The first, and most important step can be realized using a so-called `RowVersion` in the database-tables. This means that each conflict compromised table is provided with an extra column, which stores the RowVersion value of the dataset.
+The first, and most important step can be realized using a so-called `RowVersion` in the database-tables. Thus, a conflict-compromised table is provided with an extra column, which stores the RowVersion value of the dataset.
