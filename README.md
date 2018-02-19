@@ -52,3 +52,7 @@ The conflict can now be detected by temorarily saving the `RowVersion` of a data
 ```sql
 ... WHERE RowVersion = <lastRowVersionValue>;
 ```
+For finally detecting concurrency conflicts, the number of affected rows has to be evaluated, which is provided by the Database Management System after each SQL statement. There are two possible results:
+
+1. AffectedRows > 0: There was no conflict.
+2. AffectedRows = 0: A concurrency conflict occured. The dataset to be updated was changed in the meantime, which led to an increment of the `RowVersion` value so that the Where Statement above restricts to a `RowVersion` value which does not exist anymore.
