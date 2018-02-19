@@ -39,8 +39,8 @@ When inserting a new dataset, there cannot arise concurrency conflicts because i
 
 Referring to the given scenario described in the previous section, we need a mechanism which enables us to perform the following steps:
 
-1. *Conflict detection:* Detect concurrency conflicts and inform the application / user about it
-2. *Fetch last consistent state:* Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
-3. *Conflict resolution:* Realize strategies to write the data back in a synchronized state
+**(1) Conflict detection:** Detect concurrency conflicts and inform the application / user about it
+**(2) Fetching last consistent state:** Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
+**(3) Conflict resolution:** Realize strategies to write the data back in a synchronized state
 
 The first, and most important step 
