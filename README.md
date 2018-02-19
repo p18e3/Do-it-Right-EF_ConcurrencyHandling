@@ -39,8 +39,8 @@ When inserting a new dataset, there cannot arise concurrency conflicts because i
 
 Referring to the given scenario described in the previous section, we need a mechanism which enables us to perform the following steps:
 
-1. Detect concurrency conflicts and inform the application / user about it
-2. Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
-3. Realize strategies to write the data back in a synchronized state
+1. *Conflict detection:* Detect concurrency conflicts and inform the application / user about it
+2. *Fetch last consistent state:* Provide the last consistent dataset and the dirty dataset(s) in order to be able to merge / synchronize them
+3. *Conflict resolution:* Realize strategies to write the data back in a synchronized state
 
-In order to implementing a such mechanism, Entity Framework helps us to achieve the expected behavior and prevents us from unsynchronized operations on data, if we want it to. Therefore, it defines a so-called `ConcurrencyToken`, which can be applied on a specified property of an Entity. When applying, the `ConcurrencyToken` uses the specified property to auto-increment its value on each update or delete operation on an entity. Thereby, it is possible to check for other users changes on a dataset, before writing your own changes back.
+The first, and most important step 
